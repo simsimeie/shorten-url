@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 0
+
+logging.level:
+  org.hibernate.SQL: debug
+
+
+threshold:
+  retry:
+    bloomfilter : 1024
+    database : 10
+
+short-url-digits: 5
+
+# 2^20 = 1MB
+page-size: 1048576
