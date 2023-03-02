@@ -1,10 +1,11 @@
 # shorten-url
 
 ## 기술스펙
-- Springboot 2.7.8
+- Springboot(2.7.8)
 - JPA
 - H2 DB
 - Redis
+- gradle
 
 ## 특징
 1. 각 인스턴스 별 메모리 repo를 두어 storten url 중복 체크를 위해 굳이 DB를 조회하지 않아도 되도록 구현
